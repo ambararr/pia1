@@ -1,0 +1,16 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <h2>{{user?.userName}}</h2>
+      <p>{{user?.userEmail}}</p>
+      <p>{{user?.created | date}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button epand="block" shape="round" (click)="editarperfil()">Editar Perfil</ion-button>
+</ion-content>
