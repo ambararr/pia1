@@ -25,7 +25,7 @@ import {AuthGuard} from './guards/auth.guard'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImageFadeDirective } from './directives/image-fade.directive';
-
+ 
 @NgModule({
   declarations: [AppComponent, ImageFadeDirective],
   imports: [

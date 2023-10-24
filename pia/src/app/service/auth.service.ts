@@ -75,7 +75,7 @@ user?: User ;
       showBackdrop: true
     });
     loading.present();
-
+ 
     this.afauth.setPersistence('local').then(() => {
       this.afauth.signInWithEmailAndPassword(email, password).then((data) => {
         if (!data.user?.emailVerified) {

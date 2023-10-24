@@ -44,7 +44,7 @@ export class EditarPerfilPage implements OnInit {
       'userName':this.name,
       'userEmail':this.email,
       'editdate': Date.now()
-
+ 
     },{merge:true})
     .then(()=>{
       loading.present();

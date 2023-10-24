@@ -35,7 +35,7 @@ export class RegisterPage implements OnInit {
         spinner: 'crescent',
         showBackdrop: true
       });
-
+ 
       loading.present();
 
       this.afauth.createUserWithEmailAndPassword(this.email,this.password)

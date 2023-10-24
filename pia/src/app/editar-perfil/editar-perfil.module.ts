@@ -18,3 +18,4 @@ import { EditarPerfilPage } from './editar-perfil.page';
   declarations: [EditarPerfilPage]
 })
 export class EditarPerfilPageModule {}
+ 

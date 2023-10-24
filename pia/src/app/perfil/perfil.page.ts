@@ -21,7 +21,7 @@ export class PerfilPage implements OnInit {
     this.auth.user$.subscribe(user=>{
       this.user=user;
     })
-  }
+  } 
 
   editarperfil(){
     this.router.navigate(['editar/perfil'])
