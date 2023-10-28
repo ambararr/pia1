@@ -4,13 +4,13 @@ import { AuthGuard} from './guards/auth.guard';
 
 const routes: Routes = [
   {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule),
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
     canActivate: [AuthGuard]
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'landing',
     pathMatch: 'full'
   },
   {
@@ -52,6 +52,10 @@ const routes: Routes = [
     path: 'album',
     loadChildren: () => import('./album/album.module').then( m => m.AlbumPageModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'landing',
+    loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
   },
 ];
 
